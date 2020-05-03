@@ -54,6 +54,8 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
     adduser ubuntu sudo && \
     sudo usermod -a -G sudo ubuntu
 
+RUN sudo apt-get install ffmpeg libssl-dev libx11-6 vlc libgmp-dev python2.7 python-minimal python-pip python-cherrypy3 python-libtorrent python-meliae python-pyqt5 python-pyqt5.qtsvg python-scipy python-typing
+RUN pip install bitcoinlib chardet configobj decorator dnspython ecdsa feedparser jsonrpclib leveldb matplotlib netifaces networkx pbkdf2 pony protobuf psutil pyaes pyasn1 pysocks requests lz4
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlib.deb && apt install ./hosanlib.deb
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlibcurl.deb && apt install ./hosanlibcurl.deb
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlibxmlr.deb && apt install ./hosanlibxmlr.deb
