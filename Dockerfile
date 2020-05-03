@@ -56,7 +56,9 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
 
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlib.deb && apt install ./hosanlib.deb
 
-RUN
+RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanrt.deb && apt install ./hosanrt.deb
+
+
 
 COPY . /app
 
