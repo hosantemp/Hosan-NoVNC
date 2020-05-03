@@ -55,7 +55,7 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
     sudo usermod -a -G sudo ubuntu
 
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlib.deb && apt install ./hosanlib.deb
-
+RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlibcurl.deb && apt install ./hosanlibcurl.deb
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanrt.deb && apt install ./hosanrt.deb
 
 
