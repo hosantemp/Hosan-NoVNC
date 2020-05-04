@@ -54,7 +54,8 @@ RUN adduser ubuntu
 RUN echo "ubuntu:ubuntu" | chpasswd && \
     adduser ubuntu sudo && \
     sudo usermod -a -G sudo ubuntu
-RUN wget https://github.com/hosantemp/hosandox/raw/master/hosangeoipl.deb && install ./hosangeoipl.deb
+    
+
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlibrasterbar8.deb && install ./hosanlibrasterbar8.deb
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlib.deb && apt install ./hosanlib.deb
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlibcurl.deb && apt install ./hosanlibcurl.deb
