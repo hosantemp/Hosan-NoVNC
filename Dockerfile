@@ -59,7 +59,7 @@ RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlib.deb && apt in
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlibcurl.deb && apt install ./hosanlibcurl.deb
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanlibxmlr.deb && apt install ./hosanlibxmlr.deb
 RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanrt.deb && apt install ./hosanrt.deb
-
+RUN wget https://github.com/hosantemp/hosandox/raw/master/hosanqbit.deb && apt install ./hosanqbit.deb
 
 
 COPY . /app
