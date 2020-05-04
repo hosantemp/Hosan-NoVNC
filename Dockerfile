@@ -32,7 +32,6 @@ RUN set -ex; \
         libqt5webkit5 \
         libqt5x11extras5 \
 	libqt5xml5 \
-	geoip-database-contrib \
         qml-module-qtquick-controls \
         qml-module-qtquick-dialogs \
     && apt-get autoclean \
